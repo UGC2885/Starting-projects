@@ -1,0 +1,270 @@
+/*Iniciando projeto do site noticias*/
+/*Cabeçalho*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo{
+    height: 150px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+/*Barra de navegação*/
+
+a:hover{
+    color: #e50040;
+}
+
+a:link, a:visited{
+    color: #b10333;
+    padding: 2px;
+}
+
+ul{/*Sempre usar em todos os sites, pois terão um visual próprio.*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;/*Deve-se colocar o float aqui, pois ali embaixo, no ul li
+    somente o "li" está flutuando, logo, o "ul" também precisa ser um
+    elemento flutuante.*/
+}
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: /*Espaçamento superior e inf*/0.5em
+    /*Espaçamento das laterais*/1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a{
+/*Serão usados classes no link, por isso, foi usado no "ul"*/
+    background: none;
+}
+
+#topo ul a:hover{
+   color:#69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+
+
+
+/*Configura layout de colunas*/
+#conteudo{
+    margin-top: 60px;
+    background: #f5f5f5;
+    
+}
+
+#primario{
+     width: 270px;
+     float: left;/*Fazendo isso começam as colunas laterais*/
+     margin: 0 0 20px 195px;/*Por questão de acessibilidade, para que 
+     um cego não tenha que ver toda a barra lateral, secundaria, para chegar
+     na primária, usaremos margens para posicionar os blocos.
+     Todos estão como float left para que em primeiro esteja posicionado 
+     seja o conteudo principal*/
+}
+
+#duas-colunas #primario{
+    width: 555px;
+
+}
+
+#uma-colunas #primario{
+    width: 750px;
+     margin: 0 0 20px 0px;
+}
+
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+
+
+/*Caixa*/
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);  
+}
+
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*Formatar menus laterais*/
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;/*Colocar o "block, para que os links fiquem um abaixo do outro*/
+    line-height: 30px;
+    color:#000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;/*Padding vai ser o elemento que fará o movimento para a direita quando 
+    passar o mouse em cima do link*/
+    color: #a1a1a1;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+    font-size: 0.7em;
+    background-color: #fff;
+}
+
+input.submit{
+    margin-top: 8px;
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/*Formatando Imagens*/
+
+img{
+    border: 2px solid #dfdfdf;
+}
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/*Formatando cabeçalhos*/
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+/*Se você utilizar h3.destaque, todos os lugares que tiverem a classe destaque
+vai precisar ser colocado a classe destaque, mas se você usar (.destaque h3{}), nesse caso, todo 'h3' que estiver dentro de uma div,
+Vai ter os elementos colocados na classe destaque.*/
+
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3{
+    background: #de003e;
+    color: #000;
+}
+
+/*Formatando lista de notícias*/
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+}
+
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+    font-size: 0.7em;
+    color: #000;
+}
+
+#lista-noticias li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+/*Rodape*/
+#container-rodape{
+    background: #294c71;
+    padding: 20px;/*Utilizado para aumentar o tamanho do bloco*/
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
