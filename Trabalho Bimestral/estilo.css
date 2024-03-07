@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(to bottom, white, #999);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+header{
+    background: linear-gradient(to top, white, #999);
+    padding-top: 30px;
+    height: 1035px;
+    width: 1000px;
+}
+
+header li{
+    padding-bottom: 5px;
+    margin-left: 50px;
+    font-size: 1.8em;
+    list-style: none;
+    border-bottom: 2px solid #227115;
+}
+
+.header {
+    font-size: 2em;
+    width: 100%;
+    min-height: 45px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.botao{
+        box-shadow: 5px 4px 0px 0px #3dc21b;
+        background-color:transparent;
+        border-radius:12px;
+        border:5px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family:Impact;
+        font-size:22px;
+        padding:18px 55px;
+        text-decoration:none;
+        position:absolute; 
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background-color:transparent;
+
+}
+.botao:active {
+        position:relative;
+        top:1px;
+}
+
+
+.header a{
+    padding: 15px;
+}
+
+.header a:hover{
+    color: red;
+    background-color: #227115;
+}
+
+a:link, a:active, a:visited{
+    color: #af670a;
+    text-decoration: none;
+}
