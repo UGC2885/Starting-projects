@@ -11,17 +11,65 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#clientes{
+    text-align: center;
+}
+
+#titulo-formulario{
+    display: block/*Colocar display:block para que funcione as tags, pois se estiver em display:flex, não funcionará.*/;
+    font-size: 1.2em;
+    padding: 50px;
+}
+
+#conteudoFormulario{
+    align-items: center;
 }
 
 h2{
+    color: #227115;
     font-size: 2em;
     text-align: center;
+}
+
+h3{
+    text-decoration: underline;
+    color: #227115;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+table{
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+label{
+    display: block;
+    align-items: center;
+}
+
+th, tr, td{
+    border-collapse: collapse;
+    border: 1px solid green;
+    padding: 20px;
+    background: white;
 }
 
 header{
     background: linear-gradient(to top, white, #999);
     padding-top: 30px;
-    height: 1035px;
+    height: 1200px;
+    width: 1000px;
+}
+
+header#index{
+    background: linear-gradient(to top, white, #999);
+    padding-top: 30px;
+    height: 95.8vh;
     width: 1000px;
 }
 
@@ -30,7 +78,6 @@ header li{
     margin-left: 50px;
     font-size: 1.8em;
     list-style: none;
-    border-bottom: 2px solid #227115;
 }
 
 .header {
@@ -44,34 +91,6 @@ header li{
     padding: 10px;
 }
 
-.botao{
-        box-shadow: 5px 4px 0px 0px #3dc21b;
-        background-color:transparent;
-        border-radius:12px;
-        border:5px solid #18ab29;
-        display:inline-block;
-        cursor:pointer;
-        color:#000000;
-        font-family:Impact;
-        font-size:22px;
-        padding:18px 55px;
-        text-decoration:none;
-        position:absolute; 
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-}
-
-.botao:hover {
-    background-color:transparent;
-
-}
-.botao:active {
-        position:relative;
-        top:1px;
-}
-
-
 .header a{
     padding: 15px;
 }
@@ -82,6 +101,5 @@ header li{
 }
 
 a:link, a:active, a:visited{
-    color: #af670a;
     text-decoration: none;
 }

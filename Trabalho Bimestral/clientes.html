@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+    <title>Cadastro de clientes</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
 </head>
@@ -11,18 +11,101 @@
     <div id="container"><!--Inicio container-->
 
         <header>
-            <h2>Cadastro de clientes</h2><br>
+            <h2>Cadastro de clientes</h2>
 
             <div class="header">
-                <a href="index.html">Home</a>
-                <a href="#">Clientes</a>
+                <a href="#">Home</a>
+                <a href="clientes.html">Clientes</a>
                 <a href="produtos.html">Produtos</a>
             </div>
 
-            <div class="botao">
-                <a href="#">Cadastrar</a>
+            <h3>Nossos maiores clientes!!!</h3>
+            <main>
+                <table>
+                    <thead>
+                        <tr><!-- Linhas da tabela de cabeçalho -->
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Data de Nascimento</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Fulano de Tal</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>123.456.789-00</td>
+                            <td>01/01/1990</td>
+                            <td>(11) 1234-5678</td>
+                            <td>fulano@example.com</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Lucas</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>321.654.987-10</td>
+                            <td>01/01/1991</td>
+                            <td>(11) 9874-3214</td>
+                            <td>Lucas@example.com</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Felipe</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>654.974.321-54</td>
+                            <td>08/02/2002</td>
+                            <td>(45) 6541-6784</td>
+                            <td>felipe@example.com</td>
+                        </tr>
+                    </tbody>
+
+                    <section></section>
+
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Norman</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>485.138.174-98</td>
+                            <td>27/02/2002</td>
+                            <td>(47) 98874-1234</td>
+                            <td>norman@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+
+
+            <label id="titulo-formulario">Novo Cadastro</label> 
+            <div id="conteudoFormulario">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required><br><br>
+                    
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required><br><br>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <button type="submit">Salvar</button>
+                </form>
             </div>
+
         </header>
     </div><!--Fim container-->
+
+    
 </body>
 </html>

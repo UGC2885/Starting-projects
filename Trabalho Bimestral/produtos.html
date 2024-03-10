@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Produtos</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
 </head>
@@ -13,13 +13,73 @@
         <header>
             <h2>Cadastro de produtos</h2><br>
             <div class="header">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="clientes.html">Clientes</a>
-                <a href="produtos.html">Produtos</a>
+                <a href="#">Produtos</a>
             </div>
+            <h3>Nossos maiores clientes!!!</h3>
+            <main>
+                <table>
+                    <thead>
+                        <tr><!-- Linhas da tabela de cabeçalho -->
+                            <th>Nome do produto</th>
+                            <th>Preço</th>
+                            <th>Descrição</th>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Pafaruso</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>R$0,20</td>
+                            <td>Pafaruso 2", rosqueado para torque em estrela, aço laminado</td>
+                        </tr>
+                    </tbody>
 
-            <div class="botao">
-                <a href="#">Cadastrar</a>
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Furadeira E Parafusadeira De Impacto 1/2 Bosch Gsb 180 Li 18v Com Carregador Bivolt Bateria E Maleta</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>R$584,49</td>
+                            <td>ESPECIFICAÇÃO TÉCNICA: Bateria: 18V (2,0 Ah LI); Torque máximo duro: 54 Nm; Torque máximo leve: 21Nm; Configurações de torque: 20+1; Capacidade do mandril: 1/2" (13mm); Nr de velocidades: 2; N° de rotações (sem carga): 0-450/ 1.700 rpm; Impactos por minuto: 0 - 27.000 ipm</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Kit Ferro De Solda Soldar Soldador 60w + Estanho</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>R$34,20</td>
+                            <td>O ferro de solda é utilizado para unir duas partes metálicas, como fios condutores, placas de circuito e demais componentes, por meio da solda. O ferro de solda com rápido aquecimento e manutenção da temperatura, proporciona maior produtividade na utilização.</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <!-- Linhas da tabela com clientes fixos -->
+                        <tr>
+                            <td>Lâmpada Rgb A60 9w+3rgb Google/alexa Ekaza</td><!--Para criar os nomes, precisa de outro "tr" e depois mais "td"-->
+                            <td>R$36,24</td>
+                            <td>Possuir uma boa iluminação nos espaços em que estamos influencia a maneira como nos sentimos, relaxamos, trabalhamos ou estudamos. É por isso que a lâmpada da Ekaza Ekhm-T609 pode ser uma excelente opção se você quiser criar um ambiente agradável e funcional.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+
+
+            <label id="titulo-formulario">Novo Cadastro</label> 
+            <div id="conteudoFormulario">
+                <form>
+                    <label for="nome-prod">Nome do produto:</label>
+                    <input type="text" id="nome-prod" name="nome-prod" required><br><br>
+                    
+                    <label for="preco">Preço:</label>
+                    <input type="text" id="preco" name="preco" required><br><br>
+                    
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" required><br><br>
+                    
+                    <button type="submit">Salvar</button>
+                </form>
             </div>
         </header>
     </div><!--Fim container-->
