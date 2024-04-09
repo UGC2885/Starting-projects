@@ -1,0 +1,151 @@
+
+html, body, #home{/*Fazer isso por que você quer que o "musica para todos fique centralizado vertical e horizontal na pagina*/
+    height: 100%;
+    overflow-x: hidden;/*Esconde a barra de rolagem no eixo X*/
+}
+
+body{
+    background: url(/imagens/capa.png),
+                url(/imagens/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;/*Para deixar o background fixo, sem rolagem*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#services{
+    background: white;
+}
+
+#services h1, h2, h3{
+    color: #7c25f8;
+}
+
+#resources h1, h2, h3{
+    color: #9bf0e1;
+}
+
+#resources p{
+    color: white;
+}
+
+#h1{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#h2{
+    font-weight: 300;
+    font-size: 2em;
+}
+
+nav.nav-transp{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#nav-link{
+    color: white;
+}
+
+#nav-link:hover {
+    color: #9bf0e1;
+    transition: 0.7;
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 12px 15px;/*Com isso o divisor vai ter margem e ficará bonito*/
+}
+
+.capa{
+    text-align: center;
+}
+
+.rotate{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+#branco, #branco a{
+    color: white;
+}
+
+#branco i{
+    color: white;
+    padding: 14px;
+}
+
+#branco i:hover{
+    color: black;
+    background-color: aliceblue;
+    transition: 0.3s;
+    border-radius: 500px;
+}
+
+
+
+#btn-roxo{
+    color: white;
+    background: #7c25f8;
+    border-radius: 500px;
+    text-transform: uppercase;
+}
+
+#btn-roxo:hover{
+    background: #6207e3;
+}
+
+#btn-branco{
+    color: white;
+    border-radius: 500px;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+
+#btn-branco:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #btn-roxo, #btn-branco{
+        margin: 10px 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #h1{
+        font-size: 3em;
+    }
+
+    #btn-roxo, #btn-branco{
+        margin: 10px 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #h1{
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #h1{
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #h1{
+        font-size: 6em;
+    }
+}
